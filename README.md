@@ -1,79 +1,121 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+## Project Overview
 
-# Getting Started
+<p align="center">
+  <a>
+    <img width="100px" src="./readme-asset/logo.png">
+  </a>
+  <h1 align="center">Gerald App</h1>  
+</p>
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+This project involves building a **drawer menu** with nested navigation patterns using React Native and TypeScript. The goal is to replicate the drawer functionality shown in the provided GIF while incorporating additional navigation features such as a **bottom tab navigator** and **stack navigators** for individual screens.
 
-## Step 1: Start the Metro Server
+The solution also demonstrates the use of **React Native Reanimated** to enhance performance and animation quality.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+---
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Features
 
-```bash
-# using npm
-npm start
+1. **Drawer Menu**:
+   - A custom drawer menu similar to the provided GIF.
+   - Acts as the parent navigation component.
+2. **Tab Navigator**:
+   - Includes bottom tabs for navigating between major sections.
+   - Tabs:
+     - **Home** (with nested stack screens: `Screen1` and `Screen2`)
+     - **Contact**
+3. **Stack Navigator**:
 
-# OR using Yarn
-yarn start
+   - Nested inside the `Home` tab, enabling navigation between `Screen1` and `Screen2`.
+
+4. **Animations**:
+   - Smooth transitions and interactions using [React Native Reanimated](https://github.com/software-mansion/react-native-reanimated).
+
+---
+
+## Project Structure
+
+```
+root
+   └── android
+   └── ios
+   └── patches
+   └── src
+         ├── assets
+         │     ├── components
+         │     └── svgs
+         ├── components
+         ├── constants
+         ├── navigation
+         ├── screens
+         ├── types
+         └── utils
 ```
 
-## Step 2: Start your Application
+---
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Installation and Setup
 
-### For Android
+Follow these steps to set up and run the project locally:
 
-```bash
-# using npm
-npm run android
+1. **Install Dependencies**:
 
-# OR using Yarn
-yarn android
-```
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-### For iOS
+2. **Run the Application**:
 
-```bash
-# using npm
-npm run ios
+   - For iOS:
+     ```bash
+     npx react-native run-ios
+     ```
+   - For Android:
+     ```bash
+     npx react-native run-android
+     ```
 
-# OR using Yarn
-yarn ios
-```
+---
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Thought Process
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+1. **Component Hierarchy**:
 
-## Step 3: Modifying your App
+   - Structured navigation using React Navigation to ensure modularity and scalability.
+   - Drawer serves as the parent component for the tab navigator and subsequent child screens.
 
-Now that you have successfully run the app, let's modify it.
+2. **TypeScript Integration**:
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+   - Used TypeScript for type safety and better development experience.
+   - Ensured strong typing for props and navigation objects.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+3. **UI Similarity**:
 
-## Congratulations! :tada:
+   - Replicated the drawer menu design as closely as possible to the provided GIF.
+   - Included a polished UI for the drawer content and screens.
 
-You've successfully run and modified your React Native App. :partying_face:
+4. **Performance Enhancements**:
 
-### Now what?
+   - Leveraged React Native Reanimated for smooth and efficient animations.
+   - Ensured seamless transitions between drawer and child navigators.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+5. **Flexibility**:
+   - Created a reusable structure for adding or modifying screens in the future.
 
-# Troubleshooting
+---
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## :camera_flash: Screenshots
 
-# Learn More
+<div align="center" style="margin:auto;width:100%;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;">
+<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/0.png">
+<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/1.png">
+<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/2.png">
+<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/3.png">
+</div>
 
-To learn more about React Native, take a look at the following resources:
+---
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+### Demo
+
+---
