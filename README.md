@@ -13,6 +13,30 @@ The solution also demonstrates the use of **React Native Reanimated** to enhance
 
 ---
 
+## :camera_flash: Screenshots
+
+<div align="center" style="margin:auto;width:100%;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;">
+<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/0.png">
+<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/1.png">
+<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/2.png">
+<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/3.png">
+</div>
+
+---
+
+### Demo
+
+<br>
+<div style="text-align: center;">
+<video src="https://github.com/user-attachments/assets/63f47d1d-0277-4d01-acec-5be779205873" controls="controls" height="720px" margin="auto" >
+  Your browser does not support the video tag.
+</video>
+</div>
+<br>
+
+---
+
+
 ## Features
 
 1. **Drawer Menu**:
@@ -103,19 +127,5 @@ Follow these steps to set up and run the project locally:
 5. **Flexibility**:
    - Created a reusable structure for adding or modifying screens in the future.
 
----
 
-## :camera_flash: Screenshots
 
-<div align="center" style="margin:auto;width:100%;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;">
-<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/0.png">
-<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/1.png">
-<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/2.png">
-<img width="250px" margin="30px" style="margin:20px;" src="./readme-asset/3.png">
-</div>
-
----
-
-### Demo
-
----
