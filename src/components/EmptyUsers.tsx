@@ -1,5 +1,5 @@
 import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import React, {memo} from 'react';
 import {Fonts} from '../constants/fonts';
 import {Colors} from '../constants/colors';
 
@@ -24,4 +24,4 @@ const EmptyUsers = () => {
   );
 };
 
-export default EmptyUsers;
+export default memo(EmptyUsers);
