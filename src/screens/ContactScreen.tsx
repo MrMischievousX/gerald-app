@@ -103,7 +103,6 @@ const ContactScreen = ({}: Props) => {
         <FlatList
           keyExtractor={item => item.recordID}
           data={users}
-          contentContainerStyle={{flex: 1}}
           ListEmptyComponent={EmptyUsers}
           renderItem={renderItem}
         />

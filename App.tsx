@@ -1,4 +1,4 @@
-import {Platform, StatusBar, StyleSheet, Text, View} from 'react-native';
+import {Appearance, Platform, StatusBar, StyleSheet} from 'react-native';
 import React, {useEffect} from 'react';
 import MainNavigation from './src/navigation/MainNavigation';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
@@ -8,6 +8,7 @@ const App = () => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
+      backgroundColor: Colors.background,
     },
   });
 
@@ -17,9 +18,14 @@ const App = () => {
       StatusBar.setBackgroundColor(Colors.background);
       StatusBar.setBarStyle('dark-content');
     }
+    Appearance.setColorScheme('light');
   }, []);
 
-  return <MainNavigation />;
+  return (
+    <GestureHandlerRootView style={styles.container}>
+      <MainNavigation />
+    </GestureHandlerRootView>
+  );
 };
 
 export default App;

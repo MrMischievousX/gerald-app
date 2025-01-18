@@ -86,7 +86,6 @@ const HomeScreen = ({}: Props) => {
         <FlatList
           keyExtractor={item => item.id.toString()}
           data={users}
-          contentContainerStyle={{flex: 1}}
           ListEmptyComponent={EmptyUsers}
           renderItem={renderItem}
         />

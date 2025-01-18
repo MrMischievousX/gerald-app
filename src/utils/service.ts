@@ -25,9 +25,9 @@ const requestAndroidContactsPermission = async () => {
   const status = await PermissionsAndroid.request(
     PermissionsAndroid.PERMISSIONS.READ_CONTACTS,
     {
-      title: 'Allow TANGGapp to Access Contacts',
+      title: 'Allow Gerald to Access Contacts',
       message:
-        'Send money faster to people you know by allowing access to your contacts. TANGGapp will never store this information.',
+        'We need access to your contacts to enhance your experience. Your privacy is our priority!',
       buttonPositive: 'OK',
     },
   );
